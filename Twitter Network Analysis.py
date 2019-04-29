@@ -12,18 +12,18 @@ rcParams['axes.titlesize']=20
 #from the textbook is the setwise_friends_followers_analysis function.
 
 #This function will generate the api
-
+#Find your consumer and token data when you set up an account for Twitter Api users!
 def genereate_api():
     
     #consumer key for auhtentication purposes
-    consumer_key= "2xsheoZ9NhGB62h6tM2TInnTM"
-    consumer_secret="HoaS7DovZoJ9EPBVuAkt5LnjNnz0mCNxyvnpucnY9HYgnmPGLH"
+    consumer_key= ""
+    consumer_secret=""
     
     auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
     
     #access token for auhtentication purposes
-    access_token="1171944902-joVLh3WDoRskbCSBTL4zs8OPSV9pgLMQMuhqkza" 
-    access_token_secret="buVkUsSaBR2coAM9hXbS3ZlPqyCVakuj2sMvpZTgzVSSG"
+    access_token="" 
+    access_token_secret=""
     
     auth.set_access_token(access_token, access_token_secret)
     api = tweepy.API(auth, wait_on_rate_limit=True)
